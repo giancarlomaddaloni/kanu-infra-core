@@ -2,8 +2,8 @@
 
 import * as cdk from 'aws-cdk-lib';
 
-import { computeComponents } from '../lib/compute-stack';
-import { applicationComponents } from '../lib/application-stack';
+import { computeComponents } from '../cdk/lib/compute-stack';
+import { applicationComponents } from '../cdk/lib/application-stack';
 
 const app = new cdk.App();
 
