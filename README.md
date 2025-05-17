@@ -20,7 +20,7 @@ A robust AWS CDK TypeScript framework to launch Lambda-based APIs, ECS services,
 ```
 kanu-infra-launcher/
 ├── bin/
-│   └── shotlink.ts           # CDK app entrypoint (you must add this)
+│   └── kanu.ts           # CDK app entrypoint (you must add this)
 ├── iam/
 │   └── userPolicy.json       # IAM access templates
 ├── test/                     # (Optional) Jest test directory

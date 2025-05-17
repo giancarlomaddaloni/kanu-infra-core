@@ -1,8 +1,8 @@
 {
-  "name": "shotlink",
+  "name": "kanu",
   "version": "0.2.0",
   "bin": {
-    "cdk": "bin/shotlink.js"
+    "cdk": "bin/kanu.js"
   },
   "scripts": {
     "build": "tsc",
