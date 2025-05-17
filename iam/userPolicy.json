@@ -1,0 +1,211 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "ssmPermissions",
+            "Effect": "Allow",
+            "Action": [
+                "ssm:GetParametersByPath",
+                "ssm:ListTagsForResource",
+                "ssm:DescribeDocumentParameters",
+                "ssm:LabelParameterVersion",
+                "ssm:GetParameter",
+                "ssm:DescribeParameters",
+                "ssm:GetParameters",
+                "ssm:PutParameter",
+                "ssm:GetParameterHistory"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "ecrPermissions",
+            "Effect": "Allow",
+            "Action": [
+                "ecr:*"
+
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "stsPermissions",
+            "Effect": "Allow",
+            "Action": [
+                "sts:GetSessionToken",
+                "sts:AssumeRole",
+                "sts:TagSession",
+                "sts:GetCallerIdentity"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "ecsPermissions",
+            "Effect": "Allow",
+            "Action": [
+                "ecs:UpdateCluster",
+                "ecs:StartTask",
+                "ecs:DescribeTaskSets",
+                "ecs:DescribeTaskDefinition",
+                "ecs:StopTask",
+                "ecs:DeregisterContainerInstance",
+                "ecs:TagResource",
+                "ecs:ListTaskDefinitions",
+                "ecs:SubmitTaskStateChange",
+                "ecs:ListAttributes",
+                "ecs:DeregisterTaskDefinition",
+                "ecs:ListServices",
+                "ecs:RunTask",
+                "ecs:ListTasks",
+                "ecs:DescribeTasks",
+                "ecs:PutClusterCapacityProviders",
+                "ecs:UpdateTaskSet",
+                "ecs:ListTagsForResource",
+                "ecs:UpdateContainerAgent",
+                "ecs:PutAttributes",
+                "ecs:UpdateContainerInstancesState",
+                "ecs:CreateCapacityProvider",
+                "ecs:UpdateService",
+                "ecs:DescribeCapacityProviders",
+                "ecs:RegisterTaskDefinition",
+                "ecs:CreateTaskSet",
+                "ecs:UpdateClusterSettings",
+                "ecs:CreateCluster",
+                "ecs:DescribeClusters",
+                "ecs:ExecuteCommand",
+                "ecs:RegisterContainerInstance",
+                "ecs:CreateService",
+                "ecs:DescribeServices",
+                "ecs:SubmitContainerStateChange",
+                "ecs:ListClusters",
+                "ecs:UpdateCapacityProvider",
+                "ecs:ListTaskDefinitionFamilies"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "lambdaPermissions",
+            "Effect": "Allow",
+            "Action": [
+                "lambda:CreateFunction",
+                "lambda:TagResource",
+                "lambda:GetFunctionConfiguration",
+                "lambda:ListFunctions",
+                "lambda:UpdateFunctionCode",
+                "lambda:PublishVersion",
+                "lambda:ListTags",
+                "lambda:UpdateFunctionConfiguration",
+                "lambda:UpdateFunctionUrlConfig",
+                "lambda:CreateFunctionUrlConfig",
+                "lambda:UpdateFunctionEventInvokeConfig",
+                "lambda:InvokeFunctionUrl",
+                "lambda:InvokeFunction",
+                "lambda:GetFunction",
+                "lambda:GetPolicy"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "elbPermissions",
+            "Effect": "Allow",
+            "Action": [
+                "elasticloadbalancing:ModifyListener",
+                "elasticloadbalancing:AddListenerCertificates",
+                "elasticloadbalancing:CreateTargetGroup",
+                "elasticloadbalancing:AddTags",
+                "elasticloadbalancing:ModifyLoadBalancerAttributes",
+                "elasticloadbalancing:SetRulePriorities",
+                "elasticloadbalancing:CreateLoadBalancer",
+                "elasticloadbalancing:SetSubnets",
+                "elasticloadbalancing:DescribeTargetGroups",
+                "elasticloadbalancing:RegisterTargets",
+                "elasticloadbalancing:SetIpAddressType",
+                "elasticloadbalancing:SetWebAcl",
+                "elasticloadbalancing:DescribeLoadBalancers",
+                "elasticloadbalancing:CreateRule",
+                "elasticloadbalancing:ModifyTargetGroupAttributes",
+                "elasticloadbalancing:DescribeLoadBalancerAttributes",
+                "elasticloadbalancing:DescribeTargetGroupAttributes",
+                "elasticloadbalancing:ModifyRule",
+                "elasticloadbalancing:DescribeRules",
+                "elasticloadbalancing:CreateListener",
+                "elasticloadbalancing:DescribeListeners",
+                "elasticloadbalancing:DescribeSSLPolicies",
+                "elasticloadbalancing:DescribeTags",
+                "elasticloadbalancing:DescribeTargetHealth",
+                "elasticloadbalancing:SetSecurityGroups",
+                "elasticloadbalancing:ModifyTargetGroup"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "apiPermissions",
+            "Effect": "Allow",
+            "Action": [
+                "apigateway:*"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "dynamodbPermissions",
+            "Effect": "Allow",
+            "Action": [
+                "dynamodb:UpdateTimeToLive",
+                "dynamodb:UpdateItem",
+                "dynamodb:CreateTable",
+                "dynamodb:UpdateTable",
+                "dynamodb:ListTables",
+                "dynamodb:CreateTableReplica",
+                "dynamodb:ListTagsOfResource",
+                "dynamodb:ImportTable",
+                "dynamodb:DescribeTable",
+                "dynamodb:DescribeTableReplicaAutoScaling",
+                "dynamodb:TagResource",
+                "dynamodb:DescribeTimeToLive"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "route53Permissions",
+            "Effect": "Allow",
+            "Action": [
+                "route53:ListHostedZonesByName",
+                "route53:CreateCidrCollection",
+                "route53:GetHostedZoneCount",
+                "route53:ListHostedZonesByVPC",
+                "route53:ListHostedZones",
+                "route53:GetHostedZone",
+                "route53:ChangeResourceRecordSets",
+                "route53:ListCidrBlocks"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "acmPermissions",
+            "Effect": "Allow",
+            "Action": [
+                "acm:*"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "iamPermissions",
+            "Effect": "Allow",
+            "Action": [
+                "iam:ListRoleTags",
+                "iam:AddRoleToInstanceProfile",
+                "iam:ListRolePolicies",
+                "iam:GetRole",
+                "iam:UpdateRoleDescription",
+                "iam:GetRolePolicy",
+                "iam:TagRole",
+                "iam:ListInstanceProfilesForRole",
+                "iam:PassRole",
+                "iam:ListRoles",
+                "iam:CreateServiceLinkedRole",
+                "iam:UpdateRole",
+                "iam:CreateRole",
+                "iam:ListAttachedRolePolicies"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
